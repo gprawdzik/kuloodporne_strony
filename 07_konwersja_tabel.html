@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Konwersja tabel</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: "Lucida Bright", Arial, sans-serif;
+            font-size: small;
+            background: #b5b5b5;
+        }
+        a {
+            color: #77985c;
+        }
+        table {
+            width: 100%;
+            border: 1px solid #000000;
+            background: #ffffff;
+        }
+        table th, table td {
+            margin: 0;
+            padding: 8px 20px;
+            text-align: center;
+            border-bottom: 1px solid #b5b5b5;
+        }
+        table th:first-child, table td:first-child {
+            text-align: left;
+        }
+        table tr {
+            background: #e6e6e6;
+        }
+        table tr:nth-child(even) {
+            background: #f1f1f1;
+        }
+        table td a {
+            display: block;
+            font-weight: bold;
+        }
+        table th {
+            color: #999999;
+        }
+        table caption {
+            margin: 0;
+            padding: 8px 20px;
+            text-align: left;
+            border: 1px solid #000000;
+            border-bottom: none;
+            background: #ffffff;
+        }
+        section.forums {
+            -webkit-box-shadow: 4px 4px 0 #919191;
+            -moz-box-shadow: 4px 4px 0 #919191;
+            box-shadow: 4px 4px 0 #919191;
+        }
+    </style>
+</head>
+<body>
+    <section class="forums">
+        <table cellspacing="0">
+            <caption>The Films</caption>
+            <tr>
+                <th scope="col">Forum Name</th>
+                <th scope="col">Topics / Messages</th>
+                <th scope="col">Last Post</th>
+            </tr>
+            <tr>
+                <td><a href="#">Name of forum</a> This is desc of this forum</td>
+                <td>9999/88888</td>
+                <td>21.12.2012 23:22</td>
+            </tr>
+            <tr>
+                <td><a href="#">Name of forum</a> This is desc of this forum</td>
+                <td>9999/88888</td>
+                <td>21.12.2012 23:22</td>
+            </tr>
+            <tr>
+                <td><a href="#">Name of forum</a> This is desc of this forum</td>
+                <td>9999/88888</td>
+                <td>21.12.2012 23:22</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
