@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>łączenie w całość</title>
+    <meta name="viewport" content="width=device-width" />
+    <style>
+        body {
+            font-family: Georgia, serif;
+            font-size: 100%;
+            color: #4e443c;
+            background: #fcfaf5;
+        }
+        #special {
+            margin: 0 0 20px 0;
+            padding: 10px 30px 16px 30px;
+            line-height: 1.3;
+            color: rgba(255, 255, 255, .5);
+            background: #6a8087 url("img/special-bg.png") repeat-x -80% 100%;
+        }
+        #special h2 {
+            max-width: 960px;
+            margin: 0 auto;
+            font-weight: normal;
+        }
+        #special h2 strong {
+            font-family: "Georgia", Helvetica, Arial, sans-serif;
+            font-size: .9em;
+            font-weight: normal;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #ffffff;
+        }
+        header[role="banner"] {
+            overflow: auto;
+            margin: 0 0 20px 0;
+            padding: 0 0 20px 0;
+            border-bottom: 3px solid rgba(68, 44, 24, .12);
+        }
+        #logo {
+            float: left;
+            width: 20%;
+        }
+        nav[role="navigation"] ul li {
+            float: left;
+            width: 20%;
+            margin: 20px 0 0 0;
+            list-style: none;
+        }
+        nav[role="navigation"] ul li a {
+            color: #888;
+            text-decoration: none;
+            float: left;
+            width: 100%;
+        }
+        nav[role="navigation"] ul li a em {
+             display: block;
+         }
+        #wrap {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        #main {
+            float: left;
+            width: 60%;
+            margin: 0 0 30px 0;
+            padding: 0 50px 0 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            clear: both;
+        }
+        #sidebar {
+            float: right;
+            width: 40%;
+            margin: 0 0 30px 0;
+        }
+        footer[role="contentinfo"] {
+            clear: both;
+        }
+        figure img {
+            max-width: 100%;
+        }
+        div.callout {
+            margin: 0 0 20px 0;
+            padding: 25px;
+            text-align: center;
+            background: #f5eacb; /* to dla nieobsługujących przezroczystosci */
+            background: rgba(223, 174, 42, .2);
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+        div.callout p {
+            margin: 0;
+            font-size: 1.1em;
+            line-height: 1.4;
+        }
+        #sidebar ul{
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(68, 44, 24, .12);
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            column-count: 2;
+            list-style: none;
+        }
+
+
+        @media screen and (max-width: 800px){
+            nav[role="navigation"] ul li {
+                margin: 26px 0 0 0;
+            }
+            nav[role="navigation"] ul li a {
+                font-size: .9em;
+            }
+            nav[role="navigation"] ul li a em {
+                display: none;
+            }
+            #main, #sidebar {
+                float: none;
+                width: auto;
+                padding: 0;
+                font-size: .9em;
+                line-height: 1.5;
+            }
+        }
+        @media screen and (max-width: 550px){
+            #wrap {
+                padding: 0 15px;
+            }
+            #special {
+                padding-left: 15px;
+                padding-right: 15px;
+                font-size: 1.2em;
+                line-height: 1.3;
+            }
+            #logo {
+                float: none;
+                margin: 0 auto 20px auto;
+            }
+            nav[role="navigation"] ul {
+                text-align: center;
+            }
+            nav[role="navigation"] ul li {
+                float: none;
+                display: inline;
+                width: auto;
+                margin: 0 4px;
+                font-size: .75em;
+            }
+            nav[role="navigation"] ul li a {
+                float: none;
+                display: inline;
+                width: auto;
+            }
+            #main h1 {
+                font-size: 1.2em;
+                line-height: 1.4;
+            }
+            footer[role="contentinfo"] p {
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="special">
+    <h2><strong>This weeke & special:</strong> 30% off all week-old but still delicious pretzels!</h2>
+</div>
+<div id="wrap">
+    <header role="banner">
+        <div id="logo">
+            <a href="/"><img src="img/logo.gif" width="100" alt="Nazwa firmy, bo to logo" /></a>
+        </div>
+        <nav role="navigation">
+            <ul>
+                <li><a href="#">HOME <em>jakiś tekst</em></a></li>
+                <li><a href="#">ABOUT <em>aboucik to jest</em></a></li>
+                <li><a href="#">PRETZELS <em>no i co z tego</em></a></li>
+                <li><a href="#">SHOP <em>dupa blada</em></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main" role="main">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque varius, nisl et accumsan efficitur, turpis mi pretium lorem, in placerat nisi justo quis dui. Fusce dapibus urna vel nulla tempus bibendum. Curabitur maximus ex quis commodo scelerisque. Praesent placerat eu risus et varius. Cras eget molestie erat. Nam sollicitudin eros vitae dui mattis egestas. Duis turpis lacus, pharetra vel tellus a, egestas dignissim turpis. In tempus aliquet ante ut accumsan. Etiam congue, nulla quis finibus accumsan, risus nunc fringilla erat, at vehicula lorem sapien at orci. Proin a rutrum enim.
+
+        Pellentesque eget magna erat. Curabitur at ipsum facilisis, molestie nisi non, ultrices turpis. Praesent neque ligula, gravida eu urna a, convallis euismod elit. Nulla vitae neque sollicitudin, maximus ipsum et, pretium lacus. Nulla at sagittis mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean felis nisi, dapibus vel neque et, euismod volutpat massa. Duis porttitor elit sed dolor venenatis, sed malesuada felis lacinia. Praesent luctus vel lorem vitae imperdiet. Vivamus elementum viverra aliquet. Nam ac viverra lorem.
+        <figure><img src="img/widoczek.jpg" alt="hdasjk"></figure>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit vulputate neque, in pulvinar nisi posuere id. Nullam elementum porta diam ac dignissim. Mauris aliquam metus ante, sit amet commodo ligula aliquet eu. Nam a scelerisque dolor, a malesuada est. Sed iaculis placerat quam eu ultrices. Sed tempor gravida dui. Sed eu urna dignissim, fringilla neque rhoncus, faucibus augue. Morbi condimentum mauris ut turpis hendrerit, ut placerat velit finibus. Ut aliquam a mauris in tempor. Sed purus velit, congue sit amet enim in, aliquet sodales ante. Nulla convallis aliquam sodales.
+
+        Etiam imperdiet magna nec nibh tincidunt ultrices. Sed vulputate nibh nisi, nec aliquam ligula condimentum sed. Nulla interdum suscipit convallis. Maecenas euismod consequat libero, quis porta justo mollis non. Maecenas vitae sollicitudin lectus. Suspendisse potenti. Maecenas quis lectus in leo dictum blandit. In sollicitudin maximus condimentum. Aenean feugiat dignissim sapien, a vestibulum justo molestie sit amet.
+
+        Suspendisse mi felis, venenatis id nisl consectetur, porta molestie elit. Proin in pulvinar mauris. Quisque justo est, accumsan sed nulla et, elementum posuere diam. Sed et nisl a purus consectetur vulputate. Aliquam varius lacus dolor, non fringilla tortor auctor et. Sed vel lacinia lectus, quis condimentum mauris. Donec vulputate at leo vel luctus. Morbi mattis aliquet enim lobortis porttitor. Sed bibendum, lorem eget mollis pharetra, nibh nisi porta augue, nec posuere neque mauris id eros. Nunc nisi sapien, fringilla eget eros auctor, varius auctor sem.
+    </div>
+    <div id="sidebar" role="complementary">
+        <div class="callout">
+            <h3>Lorem ipsum dolor sit amet,</h3>
+            <p>consectetur adipiscing elit. Pellentesque varius, nisl et accumsan efficitur, turpis mi pretium lorem, in placerat nisi justo quis dui. Fusce dapibus urna vel nulla tempus bibendum. Curabitur maximus ex quis commodo scelerisque. Praesent placerat eu risus et varius. Cras eget molestie erat. Nam sollicitudin eros vitae dui mattis egestas. Duis turpis lacus, pharetra vel tellus a, egestas dignissim turpis. In tempus aliquet ante ut accumsan. Etiam congue, nulla quis finibus accumsan, risus nunc fringilla erat, at vehicula lorem sapien at orci. Proin a rutrum enim.</p>
+        </div>
+        <h4>Pierwszy tekst</h4>
+        <ul>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link2</a></li>
+            <li><a href="#">Link3</a></li>
+            <li><a href="#">Link4</a></li>
+            <li><a href="#">Link5</a></li>
+            <li><a href="#">Link6</a></li>
+            <li><a href="#">Link7</a></li>
+        </ul>
+        <h4>Drugi tekst</h4>
+        <ul>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link2</a></li>
+            <li><a href="#">Link3</a></li>
+            <li><a href="#">Link4</a></li>
+            <li><a href="#">Link5</a></li>
+            <li><a href="#">Link6</a></li>
+            <li><a href="#">Link7</a></li>
+        </ul>
+    </div>
+    <footer role="contentinfo">
+        ... stopek ...
+    </footer>
+</div>
+</body>
+</html>
